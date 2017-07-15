@@ -30,11 +30,11 @@ function OpenEtherScan(txid) {
 }
 
 function OpenGithubRepo() {
-  shell.openExternal('https://github.com/hunterlong/storj-wallet')
+  shell.openExternal('https://github.com/hunterlong/neureal-wallet')
 }
 
 function OpenGithubReleases() {
-  shell.openExternal('https://github.com/hunterlong/storj-wallet/releases')
+  shell.openExternal('https://github.com/hunterlong/neureal-wallet/releases')
 }
 
 function OpenHunterGithub() {
@@ -72,18 +72,18 @@ function UpdatePortfolio() {
     var totalStorj = tokenBalance * storjUSD;
     var totalEth = ethBalance * etherUSD;
     var totalPort = totalStorj + totalEth;
-    $("#portStorjUSD").html("($"+storjUSD+")");
-    $("#portEthUSD").html("($"+etherUSD+")");
-    $("#portfolioStorj").html(totalStorj.toFixed(2))
-    $("#portfolioEth").html(totalEth.toFixed(2))
-    $("#portfolioTotal").html(totalPort.toFixed(2))
-    $(".portfolio").fadeIn('fast');
+    // $("#portNeurealUSD").html("($"+storjUSD+")");
+    // $("#portEthUSD").html("($"+etherUSD+")");
+    // $("#portfolioNeureal").html(totalStorj.toFixed(2))
+    // $("#portfolioEth").html(totalEth.toFixed(2))
+    // $("#portfolioTotal").html(totalPort.toFixed(2))
+    // $(".portfolio").fadeIn('fast');
   }, 3500);
 }
 
 
 function CheckForUpdates() {
-  var versionFile = "https://raw.githubusercontent.com/hunterlong/storj-wallet/master/VERSION";
+  var versionFile = "https://raw.githubusercontent.com/hunterlong/neureal-wallet/master/VERSION";
   $.get(versionFile, function(data, status){
       var verCheck = data.replace(/^\s+|\s+$/g, '');
         if (version != verCheck) {
@@ -213,7 +213,7 @@ function updateBalance() {
 
     callPromise.then(function(result) {
         var trueBal = result[0].toString(10);
-        var messageEl = $('#storjbal');
+        var messageEl = $('#neurealbal');
         var n = trueBal * 0.00000001;
         console.log("NECP Balance: " + n);
         var atyxValue = n.toLocaleString(
