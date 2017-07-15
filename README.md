@@ -1,10 +1,10 @@
-neureal-# Иeureal Wallet
+# Иeureal Wallet
 A simple Ethereum Wallet based on Иeureal ERC20 Token. Send a Receive ETH and Иeureal with ease and security. Ethereum wallets are decrypted and raw transactions are signed locally. Raw Transactions are sent directly to EtherScan.io. This application is not an official release from Иeureal, just a opensource wallet for Иeureal Token holders. Wallet Private Keys are kept on your local machine, everytime you want to use this wallet you must re-use the Keystore JSON or Private Key for your wallet.
 This wallet is locked to the Иeureal Token contract address: `0xB64ef51C888972c908CFacf59B47C1AfBC0Ab8aC`
 
   <img src="https://i.imgur.com/UaBV6My.png">
 
-## Neureal Wallet Features
+## Иeureal Wallet Features
 - Use Keystore JSON wallet
 - Use Private Key wallet
 - Send and Receive Ethereum (ETH)
