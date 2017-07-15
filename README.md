@@ -1,6 +1,6 @@
 # Иeureal Wallet
 A simple Ethereum Wallet based on Иeureal ERC20 Token. Send a Receive ETH and Иeureal with ease and security. Ethereum wallets are decrypted and raw transactions are signed locally. Raw Transactions are sent directly to EtherScan.io. This application is not an official release from Иeureal, just a opensource wallet for Иeureal Token holders. Wallet Private Keys are kept on your local machine, everytime you want to use this wallet you must re-use the Keystore JSON or Private Key for your wallet.
-This wallet is locked to the Иeureal Token contract address: `0xB64ef51C888972c908CFacf59B47C1AfBC0Ab8aC`
+This wallet is locked to the Иeureal Token contract address: `0x91923993C4Dc3e089BBb1fc9d4A5A765A479B68f`
 
   <img src="https://i.imgur.com/UaBV6My.png">
 
@@ -8,7 +8,7 @@ This wallet is locked to the Иeureal Token contract address: `0xB64ef51C888972c
 - Use Keystore JSON wallet
 - Use Private Key wallet
 - Send and Receive Ethereum (ETH)
-- Send a Receive Иeureal tokens. ([0xB64ef51C888972c908CFacf59B47C1AfBC0Ab8aC](https://etherscan.io/address/0xB64ef51C888972c908CFacf59B47C1AfBC0Ab8aC))
+- Send a Receive Иeureal tokens. ([0x91923993C4Dc3e089BBb1fc9d4A5A765A479B68f](https://etherscan.io/address/0x91923993C4Dc3e089BBb1fc9d4A5A765A479B68f))
 - Set custom Gas Price for transactions
 - Portfolio value for Иeureal and Ethereum in USD
 - Copy address to clipboard when clicked
@@ -50,4 +50,4 @@ You can compile this electron application on your own.
 This wallet is for the Иeureal community to make life 2% easier for us ERC20 token holders. If you have any fixes or updates, please submit a PR. That'd be awesome! This wallet was NOT created by Storj, so take this as unofficial but useable. Source code is MIT, make your Иeureal ERC20 Token experience decentralized!
 
 ### Donate :beer::bug:
-ETH/STORJ: `0x41FB95D55fB0B353A82814a876Cd0BEea2b29337`
+ETH/NECP: `0x41FB95D55fB0B353A82814a876Cd0BEea2b29337`
