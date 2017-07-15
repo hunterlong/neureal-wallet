@@ -4,7 +4,7 @@ This wallet is locked to the Иeureal Token contract address: `0xB64ef51C888972c
 
   <img src="https://i.imgur.com/UaBV6My.png">
 
-## Иeureal Wallet Features
+## Neureal Wallet Features
 - Use Keystore JSON wallet
 - Use Private Key wallet
 - Send and Receive Ethereum (ETH)
