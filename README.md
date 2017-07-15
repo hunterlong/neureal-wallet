@@ -16,7 +16,7 @@ This wallet is locked to the Иeureal Token contract address: `0x91923993C4Dc3e0
 - Check for Updates button (in About - bottom right)
 - Raw Transactions send to EtherScan
 
-<img align="left" width="520" src="https://i.imgur.com/sX5X6WC.png"><h3>Wallet Security</h3>
+<img align="left" width="520" src="http://i.imgur.com/abtoXeH.png"><h3>Wallet Security</h3>
 None of your wallet information is sent to any server. This wallet uses [ether-js](https://docs.ethers.io/ethers.js/index.html) javascript library to decrypt wallets locally. Each time you open the wallet, you will need to reinput the Keystore JSON file with password or use the wallet's Private Key. To keep your wallet secure, I highly recommend using the Keystore JSON at all times. To remove confusion, this wallet will not allow you to create a new wallet. If you don't have a Ethereum or Иeureal wallet yet, make one with a secure password at [myetherwallet.com](https://www.myetherwallet.com/). This wallet will not save or move your wallets. Be sure to back up the Keystore JSON file!
 
 <img align="left" width="520" src="https://i.imgur.com/Ujp0Gt4.png"><h3>Transactions</h3>
