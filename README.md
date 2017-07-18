@@ -24,8 +24,6 @@ This Иeureal Wallet will allow you to set a custom Gas Price if you need to cha
 
 <img align="right" width="420" src="http://i.imgur.com/GiwYFi5.png">
 
-<img align="left" width="420" src="http://i.imgur.com/zo6VaGE.png">
-
 
 
 
