@@ -40,7 +40,7 @@
 
     <div id="walletActions" class="row hidden">
 
-        <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#storjmodal" onclick="UpdateTokenFeeETH();">
+        <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#neurealmodal" onclick="UpdateTokenFeeETH();">
             Send Иeureal
           </button>
 
@@ -53,7 +53,7 @@
 
     <div class="walletInput col-xs-7 col-xs-offset-3">
 
-        <div id="keystoreupload" class="hidden">
+        <div id="keystoreupload" class="">
             <div class="form-group">
                 <label for="exampleInputEmail1">Keystore JSON File</label>
                 <button onclick="OpenKeystoreFile();">Open Keystore File</button>
@@ -131,7 +131,7 @@
 
 
 
-    <div class="modal fade" id="storjmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="neurealmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -151,7 +151,7 @@
                             <input type="text" id="send_amount_token" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="0.0" onkeyup="CheckTokenAvailable();">
                             <span class="input-group-addon">Иeureal</span>
                         </div>
-                        <p class="help-block"><u class="storjspend">0.0</u> NECP Available | <u class="ethavailable">0.0</u> ETH Available | Gas Limit: 65000</p>
+                        <p class="help-block"><u class="neurealspend">0.0</u> NECP Available | <u class="ethavailable">0.0</u> ETH Available | Gas Limit: 65000</p>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -181,11 +181,11 @@
                 </div>
                 <div class="modal-body">
 
-                  A simple Ethereum Wallet based on Иeureal ERC20 Token. Send a Receive ETH and Storj with ease and security. Ethereum wallets are decrypted and raw transactions are signed locally. Raw Transactions are sent directly to EtherScan.io. This application is not an official release from Storj, just a opensource wallet for Storj Token holders. Wallet Private Keys are kept on your local machine, everytime you want to use this wallet you must re-use the Keystore JSON or Private Key for your wallet.
+                  A simple Ethereum Wallet based on Иeureal ERC20 Token. Send a Receive ETH and Neureal Coins with ease and security. Ethereum wallets are decrypted and raw transactions are signed locally. Raw Transactions are sent directly to EtherScan.io. This application is not an official release from Neureal, just a opensource wallet for Neureal Token holders. Wallet Private Keys are kept on your local machine, everytime you want to use this wallet you must re-use the Keystore JSON or Private Key for your wallet.
 
                     <p></p>
 
-                    <a href="#" onclick="CheckForUpdates()">Check for Updates</a> | <a href="#" onclick="OpenGithubRepo()">Storj Wallet Github</a> | Developed by <a href="#" onclick="OpenHunterGithub()">Hunter Long</a>
+                    <a href="#" onclick="CheckForUpdates()">Check for Updates</a> | <a href="#" onclick="OpenGithubRepo()">Neureal Wallet Github</a> | Developed by <a href="#" onclick="OpenHunterGithub()">Hunter Long</a>
 
                 </div>
                 <div class="modal-footer">
