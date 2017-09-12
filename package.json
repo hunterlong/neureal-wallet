@@ -13,7 +13,7 @@
         "appId": "com.neurealwallet",
         "productName": "Neureal Wallet",
         "mac": {
-            "category": "your.app.category.type"
+            "category": "financial"
         },
         "linux": {
             "target": [
@@ -22,7 +22,7 @@
         },
         "win": {}
     },
-    "repository": "https://github.com/electron/electron-quick-start",
+    "repository": "https://github.com/hunterlong/neureal-wallet",
     "keywords": [
         "neureal",
         "neureal-wallet"
