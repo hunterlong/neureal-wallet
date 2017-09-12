@@ -13,7 +13,7 @@ var tokenBalance = 0;
 var ethBalance = 0;
 var version = "0.0.1";
 
-var storjUSD = 0;
+var necpUSD = 0;
 var etherUSD = 0;
 
 var provider = new providers.EtherscanProvider(false);
@@ -48,7 +48,7 @@ function OpenMyEtherWallet() {
 function StorjPrice() {
   var api = "https://api.coinmarketcap.com/v1/ticker/storj/";
   $.get(api, function(data, status){
-    storjUSD = parseFloat(data[0]['price_usd']);
+    necpUSD = parseFloat(data[0]['price_usd']);
   });
 }
 
@@ -69,10 +69,10 @@ function UpdatePricing() {
 
 function UpdatePortfolio() {
   setTimeout(function() {
-    var totalStorj = tokenBalance * storjUSD;
+    var totalStorj = tokenBalance * necpUSD;
     var totalEth = ethBalance * etherUSD;
     var totalPort = totalStorj + totalEth;
-    // $("#portNeurealUSD").html("($"+storjUSD+")");
+    // $("#portNeurealUSD").html("($"+necpUSD+")");
     // $("#portEthUSD").html("($"+etherUSD+")");
     // $("#portfolioNeureal").html(totalStorj.toFixed(2))
     // $("#portfolioEth").html(totalEth.toFixed(2))
@@ -87,7 +87,7 @@ function CheckForUpdates() {
   $.get(versionFile, function(data, status){
       var verCheck = data.replace(/^\s+|\s+$/g, '');
         if (version != verCheck) {
-          alert("There's a new Update for Storj Wallet! New Version: "+data);
+          alert("There's a new Update for Neureal Wallet! New Version: "+data);
           OpenGithubReleases();
         } else {
           alert("You have the most current version");
@@ -225,7 +225,7 @@ function updateBalance() {
 
         var split = atyxValue.split(".");
         tokenBalance = parseFloat(atyxValue);
-        $(".storjspend").html(atyxValue)
+        $(".neurealspend").html(atyxValue)
         messageEl.html(split[0] + ".<small>" + split[1] + "</small>");
 
     });
@@ -357,6 +357,9 @@ function UpdateAvailableETH() {
 function UpdateTokenFeeETH() {
     var fee = $("#tokentxfee").val();
     var available = ethBalance - fee;
+
+
+
     $(".ethavailable").each(function(){
       $(this).html(available.toFixed(6));
     });
@@ -386,7 +389,7 @@ function SendToken(callback) {
             $(".txidLink").attr("onclick", "OpenEtherScan('"+txid.hash+"')");
             $("#senttxamount").html(amount);
             $("#txtoaddress").html(to);
-            $("#txtype").html("STORJ");
+            $("#txtype").html("NECP");
             $('#trxsentModal').modal('show');
             updateBalance();
         });
