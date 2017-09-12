@@ -382,7 +382,7 @@ function SendToken(callback) {
             gasLimit: 65000,
         }).then(function(txid) {
             console.log(txid);
-            $('#tokenModal').modal('hide')
+            $('#neurealmodal').modal('hide')
             $("#sendtokenbutton").prop("disabled", false);
 
             $(".txidLink").html(txid.hash);

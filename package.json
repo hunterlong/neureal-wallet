@@ -34,6 +34,7 @@
     },
     "dependencies": {
         "clipboardy": "^1.1.4",
+        "electron-default-menu": "^1.0.1",
         "ethers": "^2.1.1"
     }
 }
